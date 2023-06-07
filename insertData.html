@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Insert Data Into a Database</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <form method="post" action="php/insertIntoValues.php">
+      <fieldset>
+        <legend>Enter the information of the room:</legend>
+
+        <label>Building</label><br />
+        <input name="buildingNo" type="radio" value="A" /> <label>A</label>
+        <br />
+        <input name="buildingNo" type="radio" value="B" /> <label>B</label>
+        <br />
+        <input name="buildingNo" type="radio" value="C" /> <label>C</label>
+        <br />
+        <input name="buildingNo" type="radio" value="T" /> <label>T</label>
+        <br />
+        <label>Floor</label><input type="number" name="floorNo" /> <br />
+        <label>Room No</label><input type="number" name="roomNo" /> <br />
+        <label>Capacity</label><input type="number" name="capacity" /> 
+        <br />
+        <br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+    <br />
+    <a href="index.html">Back to the homepage</a>
+  </body>
+</html>

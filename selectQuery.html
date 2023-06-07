@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Select Records from a Table</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <form method="post" action="php/selectAllQuery.php">
+      <fieldset>
+        <legend>Display All Rooms</legend>
+        <br />
+        <br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+    <br />
+    <br />
+    <form method="post" action="php/selectLikeQuery.php">
+      <fieldset>
+        <legend>Rooms in a specific building</label>
+          <label>Building</label><br />
+          <input name="buildingNo" type="radio" value="A" /> <label>A</label>
+          <br />
+          <input name="buildingNo" type="radio" value="B" /> <label>B</label>
+          <br />
+          <input name="buildingNo" type="radio" value="C" /> <label>C</label>
+          <br />
+          <input name="buildingNo" type="radio" value="T" /> <label>T</label>
+          <br />
+          <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+    <br />
+    <br />
+    <form method="post" action="php/selectWhereQuery.php">
+      <fieldset>
+        <legend>Room with a specific minimum capacity </legend>
+        <label>Capacity: </label> <input type="number" name="minCap" /> <br />
+        <br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+    <a href='index.html'>Back to the Homepage</a>
+  </body>
+</html>

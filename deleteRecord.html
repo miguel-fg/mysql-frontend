@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Delete a Record in a Table</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <p>Delete the record of a room, given the building, floor and room number:</p>
+    <form method="post" action="php/deleteRecord.php">
+        <label>Building</label><br />
+        <input name="buildingNo" type="radio" value="A" /> <label>A</label>
+        <br />
+        <input name="buildingNo" type="radio" value="B" /> <label>B</label>
+        <br />
+        <input name="buildingNo" type="radio" value="C" /> <label>C</label>
+        <br />
+        <input name="buildingNo" type="radio" value="T" /> <label>T</label>
+        <br />
+        <label>Floor</label><input type="number" name="floorNo" /> <br />
+        <label>Room No</label><input type="number" name="roomNo" /> 
+        <br />
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+    <a href='index.html'>Back to the Homepage</a>
+  </body>
+</html>
